@@ -71,5 +71,5 @@ group :test do
   # gem "webdrivers"
 end
 
-gem "stimulus_reflex", '3.5.0.pre9'
-gem "cable_ready", '5.0.0.pre9'
+gem "cable_ready", github: "stimulusreflex/cable_ready", branch: "master"
+gem "stimulus_reflex", github: "stimulusreflex/stimulus_reflex", branch: "new_installer"

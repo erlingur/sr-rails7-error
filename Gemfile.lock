@@ -1,3 +1,33 @@
+GIT
+  remote: https://github.com/stimulusreflex/cable_ready.git
+  revision: 05e2f1bcd4265da315960159c0d6c96875ad2e9c
+  branch: master
+  specs:
+    cable_ready (5.0.0.pre9)
+      actioncable (>= 5.2)
+      actionpack (>= 5.2)
+      actionview (>= 5.2)
+      activerecord (>= 5.2)
+      activesupport (>= 5.2)
+      railties (>= 5.2)
+      thread-local (>= 1.1.0)
+
+GIT
+  remote: https://github.com/stimulusreflex/stimulus_reflex.git
+  revision: 79ebaa4ccdd711a9e9801fdd4f7d9f03e549ea48
+  branch: new_installer
+  specs:
+    stimulus_reflex (3.5.0.pre9)
+      actioncable (>= 5.2)
+      actionpack (>= 5.2)
+      actionview (>= 5.2)
+      activesupport (>= 5.2)
+      cable_ready (>= 5.0.0.pre9)
+      nokogiri
+      rack
+      railties (>= 5.2)
+      redis
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -69,14 +99,6 @@ GEM
     bootsnap (1.11.1)
       msgpack (~> 1.2)
     builder (3.2.4)
-    cable_ready (5.0.0.pre9)
-      actioncable (>= 5.2)
-      actionpack (>= 5.2)
-      actionview (>= 5.2)
-      activerecord (>= 5.2)
-      activesupport (>= 5.2)
-      railties (>= 5.2)
-      thread-local (>= 1.1.0)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
     digest (3.1.0)
@@ -167,16 +189,6 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
-    stimulus_reflex (3.5.0.pre9)
-      actioncable (>= 5.2)
-      actionpack (>= 5.2)
-      actionview (>= 5.2)
-      activesupport (>= 5.2)
-      cable_ready (>= 5.0.0.pre9)
-      nokogiri
-      rack
-      railties (>= 5.2)
-      redis
     strscan (3.0.1)
     thor (1.2.1)
     thread-local (1.1.0)
@@ -198,7 +210,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  cable_ready (= 5.0.0.pre9)
+  cable_ready!
   jbuilder
   jsbundling-rails
   pg (~> 1.4)
@@ -207,7 +219,7 @@ DEPENDENCIES
   redis (~> 4.0)
   sprockets-rails
   stimulus-rails
-  stimulus_reflex (= 3.5.0.pre9)
+  stimulus_reflex!
   turbo-rails
 
 RUBY VERSION
